@@ -14,7 +14,7 @@ int main() {
     int  n = sizeof(coins)/sizeof(int);
     int money =  168 ;
     while(money>0) {
-        int lb = lower_bound(coins, coins + n, money,compare) - coins - 1;
+        int lb = lower_bound(coins, coins + 1, money,compare) - coins - 1;
         int m = coins[lb];
         cout << m << ",";
         money = money - m;
