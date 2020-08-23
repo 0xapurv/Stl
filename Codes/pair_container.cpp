@@ -2,7 +2,6 @@
 // Created by Apurv Jha on 8/23/2020.
 //
 #include <iostream>
-#include <string>
 using namespace std;
 
 int main(){
@@ -27,8 +26,6 @@ int main(){
     car.first.second = 20;
     cout<<car.first.first<<endl;
     cout<<car.second<<endl;
-
-    return 0;
 
 }
 
