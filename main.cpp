@@ -3,10 +3,11 @@
 //
 #include <iostream>
 #include <string>
+#include <list>
 using namespace std;
 
 int main(){
-
+     list<int [100]> output;
     //Pair
     pair<int,char> p;
     p.first = 10;
