@@ -65,17 +65,17 @@ int main() {
     cout << s << endl;
 
     //Iterators over all the characters in the string
-    for(int i = 0; i < s1.length(); i++) {
+    for (int i = 0; i < s1.length(); i++) {
         cout << s1[i] << ":";
     }
 
     //Iterators
-    for(auto it = s1.begin(); it != s1.end(); it++) {
+    for (auto it = s.begin(); it != s.end(); it++) {
         cout << (*it) << ",";
     }
 
     //For each Loop
-    for(char c:s1) {
+    for (char c:s1) {
         cout << c << ".";
     }
     return 0;
