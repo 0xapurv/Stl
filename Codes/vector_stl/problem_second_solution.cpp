@@ -12,6 +12,7 @@ class Car{
 public:
     string car_name;
     int x,y;
+    Car(){}
     Car(string n,int x,int y){
         this->car_name = n;
         this->x=x;
@@ -47,7 +48,7 @@ int main(){
     sort(v.begin(),v.end(),compare);
 
     for(auto c:v){
-        cout<<"Car "<<c.car_name<<" Distance "<<c.dist()<<" Location "<<c.x<<" "<<c.y<<endl;
+        cout<<"Car"<<c.car_name<<" Distance "<<c.dist()<<" Location "<<c.x<<c.y<<endl;
     }
 
     return 0;
