@@ -2,7 +2,6 @@
 #include<list>
 using namespace std;
 
-// Templates
 template<typename T>
 int search(T arr[],int n,T key){
 
@@ -15,7 +14,6 @@ int search(T arr[],int n,T key){
     return n;
 }
 
-// Template + Iterator
 template<class ForwardIterator,class T>
 ForwardIterator search(ForwardIterator start,ForwardIterator end, T key){
 
@@ -41,7 +39,7 @@ int main() {
     l.push_back(5);
     l.push_back(3);
     
-    auto it = search(l.begin(),l.end(),50); // l.begin() is a type of list<int>::iterator
+    auto it = search(l.begin(),l.end(),50);
     if(it==l.end()){
         cout<<"element not present";
     }
